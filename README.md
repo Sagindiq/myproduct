@@ -1,2 +1,1 @@
-# scss-template
-scss template
+**__ My Product__ **
