@@ -1,0 +1,12 @@
+@mixin poppins($fw, $fz, $lh) {
+    font-family: 'poppins', sans-serif;
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+}
+
+@mixin list-unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
