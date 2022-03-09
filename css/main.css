@@ -1,18 +1,52 @@
+/* poppins-regular - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("../fonts/poppins-v19-latin-regular.woff2") format("woff2"), url("../fonts/poppins-v19-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local(""), url("../fonts/poppins-v19-latin-600.woff2") format("woff2"), url("../fonts/poppins-v19-latin-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-700 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""), url("../fonts/poppins-v19-latin-700.woff2") format("woff2"), url("../fonts/poppins-v19-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "poppins", sans-serif;
   font-size: 15px;
   line-height: 1.5;
-  background-color: #fff;
+  color: #22343D;
   height: 100vh;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,8 +56,20 @@ body {
           flex-direction: column;
 }
 
+header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  top: 0;
+  left: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 5;
+}
+
 main {
-  background-color: #ccc;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -47,5 +93,231 @@ a {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.container {
+  max-width: 1131px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header__container {
+  max-width: 1150px;
+  padding-top: 23px;
+  padding-bottom: 29px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  margin-right: 20.61%;
+}
+
+.header__buttons {
+  max-width: 292px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__button {
+  font-family: 'poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #173A56;
+  padding: 10px 22px 9px 25px;
+  background-color: transparent;
+  border: 1px solid #BCD0E5;
+  border-radius: 4px;
+}
+
+.header__button--register {
+  color: #fff;
+  background-color: #02897A;
+}
+
+.header__button-daynight {
+  width: 32px;
+  height: 32px;
+  padding: 6px;
+  background-color: #f3f3f3;
+  border: none;
+  border-radius: 50%;
+}
+
+.header__burger {
+  display: none;
+  width: 28px;
+  height: 19px;
+  border: none;
+  background-color: transparent;
+}
+
+.header__burger::before, .header__burger::after, .header__burger-inner {
+  width: 24px;
+  height: 3px;
+  background-color: #173A56;
+  border-radius: 14px;
+  content: '';
+}
+
+@media only screen and (max-width: 1131px) {
+  .header__container {
+    max-width: 1131px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__logo {
+    margin: 0;
+  }
+  .header__buttons {
+    max-width: 242px;
+    width: 100%;
+  }
+  .header__button {
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 7.5px 18px 6.5px 21px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header__container {
+    max-width: 380px;
+    padding: unset 15px;
+    margin: 0 auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__buttons {
+    display: none;
+  }
+  .header__burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.header__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 377px;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 20px;
+}
+
+.header__item-link {
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #22343D;
+}
+
+.header__item-link--active {
+  font-family: 'poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+@media only screen and (max-width: 1131px) {
+  .header__list {
+    width: 300px;
+    margin-right: 16px;
+    margin-right: 0;
+    padding: 0 7px;
+  }
+  .header__item-link {
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px;
+  }
+  .header__item-link--active {
+    font-weight: 600;
+  }
+}
+
+.logo {
+  width: 171px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo__img {
+  width: 40px;
+  height: 36.36px;
+}
+
+.logo__text {
+  font-family: 'poppins', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 28px;
+  color: #173A56;
+}
+
+.night-theme--active {
+  background-color: #1F2E35;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+  --text-color: #fff;
+  --white-background: #fff;
+}
+
+.white-color {
+  color: var(--text-color);
+}
+
+.white-color strong {
+  color: var(--text-color);
+}
+
+.night-background::after,
+.night-background::before,
+.header__burger-inner.night-background {
+  background-color: var(--white-background);
 }
 /*# sourceMappingURL=main.css.map */
