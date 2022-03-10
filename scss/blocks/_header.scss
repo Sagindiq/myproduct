@@ -1,3 +1,24 @@
+@keyframes to-left {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes to-back {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+
 .header__container {
     max-width: 1150px;
     padding-top: 23px;
@@ -8,15 +29,23 @@
 }
 
 .header__logo {
-    margin-right: 20.61%;
+    margin-right: auto;
+}
+.header__box {
+    width: 695px;
+    // width: 100%;
+    display: flex;
+    align-items: center;
 }
 
+
 .header__buttons {
+    margin-left: auto;
     max-width: 292px;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
 }
 
 .header__button {
@@ -26,11 +55,27 @@
     background-color: transparent;
     border: 1px solid #BCD0E5;
     border-radius: 4px;
+
+    &:hover {
+        color: #fff;
+        background-color: #02897A;
+        cursor: pointer;
+    }
+
+    :focus {
+        border:none;
+    }
 }
 
 .header__button--register {
     color: #fff;
     background-color: #02897A;
+
+    &:hover {
+        color: #02897A;
+        background-color: transparent;
+        border: 1px solid #02897A;
+    }
 }
 
 .header__button-daynight {
@@ -40,6 +85,14 @@
     background-color: #f3f3f3;
     border: none;
     border-radius: 50%;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:focus {
+        border: none;
+    }
 }
 
 .header__burger {
@@ -56,6 +109,7 @@
         height: 3px;
         background-color: #173A56;
         border-radius: 14px;
+        transition: 0.5s ease all;
         content: '';
     }
 }
@@ -64,16 +118,22 @@
     .header__container {
         max-width: $tablet;
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
     }
 
     .header__logo {
-        margin: 0;
+        margin-right: 6%;
+    }
+
+    .header__box {
+        max-width: 695px;
+        margin-left: auto;
+        // margin-right: auto;
     }
 
     .header__buttons {
+        margin-left: auto;
         max-width: 242px;
-        width: 100%;
     }
 
     .header__button {
@@ -90,13 +150,98 @@
         justify-content: space-between;
     }
 
-    .header__buttons {
+    .header__box {
         display: none;
+        margin: 0;
+        padding: 0;
+        animation: to-back 0.4s;
     }
 
+    .header__logo {
+        margin: 0;
+        padding: 0;
+        margin-right: auto;
+    }
+
+    .header__buttons {
+        margin: 0;
+        padding: 0;
+    }
+    
     .header__burger {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+    
+    .header__burger--opened {
+        position: relative;
+
+        & .header__burger-inner {
+            display: none;
+        }
+
+        &::before,
+        &::after {
+            width: 21.69px;
+            height: 3.69px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+
+        &::after {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        &::before {
+            margin-bottom: 0;
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+
+    .header__shadow--activated {
+        width: 100%;
+        height: calc(100vh - 88px);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000000;
+        mix-blend-mode: normal;
+        opacity: 0.75;
+        z-index: 2;
+    }
+
+    .header__box--opened {
+        animation: to-left 0.4s;
+        width: 60%;
+        height: calc(100vh - 88px);
+        background-color: #000000;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 3;
+    }
+
+    .header__buttons {
+        max-width: 180px;
+        display: flex;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 30px;
+    }
+
+    .header__button {
+        @include poppins(600, 10px, 22px);
+        padding: 5px 14px 5px 14px;
+        color: white;
     }
 }

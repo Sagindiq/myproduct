@@ -8,3 +8,13 @@ daynight.addEventListener("click", function() {
   nightBurger.classList.toggle("night-background");
   nightBurgerInner.classList.toggle("night-background");
 })
+
+const burger = document.querySelector(".header__burger")
+const header = document.querySelector(".header__box")
+const headerShadow = document.querySelector(".header__shadow")
+
+burger.addEventListener("click", function() {
+  burger.classList.toggle("header__burger--opened");
+  header.classList.toggle("header__box--opened");
+  headerShadow.classList.toggle("header__shadow--activated");
+})

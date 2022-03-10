@@ -1,17 +1,37 @@
+.night-theme--active .header__box--opened {
+    background-color: #fff;
+}
+
 .night-theme--active {
     background-color: #1F2E35;
     transition: background-color 0.4s;
-    --text-color: #fff;
     --white-background: #fff;
+
+
+    & .header__box--opened .header__item-link {
+        color: black;
+    }
+
+    & .header__box--opened .header__button {
+        color: black;
+    }
 }
 
-.white-color {
-    color: var(--text-color);
+
+.night-theme--active * {
+    color: #ffffff;
 }
 
-.white-color strong {
-    color: var(--text-color);
+
+
+.night-theme--active .header {
+    background-color: #1F2E35;
+    transition: background-color 0.4s;
 }
+
+// .white-color strong {
+// //     color: var(--text-color);
+// // }
 
 .night-background::after,
 .night-background::before,
