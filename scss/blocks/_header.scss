@@ -32,7 +32,6 @@
 }
 .header__box {
     width: 695px;
-    // width: 100%;
     display: flex;
     align-items: center;
 }
@@ -117,7 +116,6 @@
     .header__container {
         max-width: $tablet;
         display: flex;
-        // justify-content: space-between;
     }
 
     .header__logo {
@@ -127,7 +125,6 @@
     .header__box {
         max-width: 695px;
         margin-left: auto;
-        // margin-right: auto;
     }
 
     .header__buttons {
