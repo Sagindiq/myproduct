@@ -69,3 +69,32 @@
     }
 }
 
+@media only screen and (max-width: $tablet) {
+    
+    .intro__content {
+        width: 47.47%;
+        padding-right: 2px;
+    }
+
+    .intro__title {
+        @include poppins(600, 30px, 40px);
+        margin-bottom: 10px;
+    }
+
+    .intro__description {
+        @include poppins(normal, 14px, 24px);
+    }
+
+    .intro__button {
+        padding: 10px 18px;
+    }
+
+    .intro__link {
+        width: 144px;
+    }
+
+    .intro__link-text {
+        @include poppins(600px, 14px, 20px);
+    }
+}
+

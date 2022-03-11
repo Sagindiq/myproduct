@@ -624,6 +624,38 @@ a {
           transform: scale(1.02);
 }
 
+@media only screen and (max-width: 1131px) {
+  .intro__content {
+    width: 47.47%;
+    padding-right: 2px;
+  }
+  .intro__title {
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  .intro__description {
+    font-family: 'poppins', sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .intro__button {
+    padding: 10px 18px;
+  }
+  .intro__link {
+    width: 144px;
+  }
+  .intro__link-text {
+    font-family: 'poppins', sans-serif;
+    font-weight: 600px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 .night-theme--active .header__box--opened {
   background-color: #fff;
 }
