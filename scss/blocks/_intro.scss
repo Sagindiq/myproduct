@@ -1,0 +1,71 @@
+.intro {
+    margin-top: 25px;
+}
+
+.intro__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro__img {
+    max-width: 600px;
+    object-fit: cover;
+}
+
+.intro__content {
+    max-width: 518px;
+}
+
+.intro__title {
+    @include poppins(700, 40px, 60px);
+    color: $black-accent;
+}
+
+.intro__description {
+    @include poppins(400, 18px, 28px);
+    color: $black-accent;
+    margin-bottom: 45px;
+}
+
+.intro__buttons {
+    max-width: 366px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro__button {
+    @include poppins(700, 16px, 24px);
+    color: #fff;
+    padding: 15px 41px 14px;
+    background-color: $green-accent;
+    border: 1px solid $green-accent;
+    border-radius: 4px;
+
+    &:hover {
+        cursor: pointer;
+        color: $green-accent;
+        background-color: transparent;
+        border: 1px solid $green-accent;
+    }
+}
+
+.intro__link {
+    width: 161px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro__link-text {
+    @include poppins(600, 16px, 24px);
+    color: $green-accent !important;
+    text-decoration: underline;
+
+    &:hover {
+        text-decoration: none;
+        transform: scale(1.02);
+    }
+}
+
