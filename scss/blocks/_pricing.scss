@@ -12,6 +12,7 @@
 .pricing__title {
   text-align: center;
   margin-bottom: 8px;
+  color: #22343D;
 }
 
 .pricing__subtitle {
@@ -20,6 +21,7 @@
 }
 
 .pricing__list {
+  max-width: 1110px;
   text-align: center;
   @include reset-list;
 }
@@ -42,6 +44,7 @@
 }
 
 .pricing__free-title {
+  margin-top: 24px;
   margin-bottom: 8px;
 }
 
@@ -50,7 +53,7 @@
 }
 
 .pricing__free-descriptions {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .pricing__table {
@@ -112,14 +115,40 @@
 
 .pricing__button {
   padding: 11px 19px;
+  margin-top: 38px;
   background: #02897A;
   color: #FFFFFF;
   border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
 
   &--active {
     padding: 11px 19px;
+    margin-top: 38px;
     background: #FFFFFF;
     color: #02897A;
     border-radius: 8px;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: $tablet) {
+  .pricing__list {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+  
+  .pricing__item:nth-child(3n) {
+    margin-top: 70px;
+    flex-basis: 323px;
+    margin-left: auto;
+    margin-right: auto;
+    // flex-grow: 1;
   }
 }
