@@ -103,5 +103,40 @@
 
     .built__item-description {
         width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
+}
+
+@media only screen and (max-width: $mobile) {
+
+    .built {
+        background-image: url(../img/built-mobile-bg.png);
+        height: 1095px;
+    }
+
+    .built__title {
+        width: 331px;
+        margin-bottom: 50px;
+    }
+
+    .built__list {
+        width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+    }
+
+    .built__item {
+        width: 240px;
+
+        &::before {
+            margin-bottom: 24px;
+        }
+    }
+
+    .built__item-title {
+        margin-bottom: 8px;
+    }
+
 }
