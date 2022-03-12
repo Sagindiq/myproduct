@@ -729,6 +729,8 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  -webkit-transition: background-image 0.4s;
+  transition: background-image 0.4s;
 }
 
 .built__title {
@@ -849,5 +851,11 @@ a {
 .night-background::before,
 .header__burger-inner.night-background {
   background-color: var(--white-background);
+}
+
+.night-theme--active .built {
+  background-image: url(../img/built-night-bg.png);
+  -webkit-transition: background-image 0.4s;
+  transition: background-image 0.4s;
 }
 /*# sourceMappingURL=main.css.map */
