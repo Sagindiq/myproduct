@@ -1,1 +1,1 @@
-*My Product named site*
+*My* **product**

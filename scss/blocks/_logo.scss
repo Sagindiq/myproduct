@@ -1,0 +1,27 @@
+.logo {
+    width: 171px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo__img {
+    width: 40px;
+    height: 36.36px;
+}
+
+.logo__text {
+    @include poppins(700, 30px, 28px);
+    color: #173A56;
+}
+
+@media only screen and (max-width: $tablet) {
+    .logo {
+        width: 160px;
+        justify-content: unset;
+    }
+
+    .logo__text {
+        margin-left: 12px;
+    }
+}

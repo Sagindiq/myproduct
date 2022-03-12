@@ -2,23 +2,41 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0; 
-  padding: 0;
+  margin-top: 90px;
   font-family: "poppins", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5;
-  background-color: #fff;
+  color: #22343D;
   height: 100vh;
+
+  transition: background-color 0.4s;
 
   display: flex;
   flex-direction: column;
 }
 
+header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  top: 0;
+  left: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  transition: background-color 0.4s;
+  z-index: 5;
+  box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.1);
+
+}
+
 main {
-  background-color: #ccc;
   flex-grow: 1;
 }
 
