@@ -190,3 +190,55 @@
     @include poppins(400, 16px, 26px);
     margin-bottom: 30px;
 }
+
+@media only screen and (max-width: $tablet) and (min-width: $mobile) {
+    .benefits__list {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .benefits__item {
+        flex-direction: column;
+    }
+
+    .benefits__item-management,
+    .benefits__item-collaborative {
+        flex-direction: column-reverse;
+    }
+
+    .benefits__item::before {
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+
+    .benefits__item-support>.benefits__item-content {
+        margin-left: auto;
+    }
+
+    .benefits__item-management::after {
+        margin-left: auto;
+        margin-bottom: 40px;
+    }
+
+    .benefits__item-management>.benefits__item-content {
+        margin-right: auto;
+        text-align: right;
+    }
+
+    .benefits__item-collaborative::after {
+        margin-left: auto;
+        margin-bottom: 40px;
+    }
+
+    .benefits__item-collaborative>.benefits__item-content {
+        margin-right: auto;
+        text-align: right;
+    }
+
+    .benefits__item-managment-title {
+        margin-bottom: 30px;
+    }
+
+    // ilon izi shaklida qilingang
+}
+
