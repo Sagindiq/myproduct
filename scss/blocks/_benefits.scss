@@ -242,3 +242,160 @@
     // ilon izi shaklida qilingang
 }
 
+@media only screen and (max-width: $mobile) {
+    .benefits__list {
+        width: 335px;
+        justify-content: unset;
+        align-items: unset;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .benefits__item {
+        flex-direction: column;
+        justify-content: unset !important;
+        align-items: unset !important;
+    }
+
+    .benefits__item-management,
+    .benefits__item-collaborative {
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+
+    .benefits__item-management::after {
+        display: inline-block;
+        width: 349px;
+        height: 306px;
+        margin-bottom: 50px;
+        background-image: url(../img/benefits-managment.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: '';
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+            background-image: url(../img/benefits-managment@2x.png);
+            /* Retina-specific stuff here */
+        }
+    }
+
+    .benefits__item-support::before {
+        display: inline-block;
+        width: 350px;
+        height: 319px;
+        margin-bottom: 50px;
+        background-image: url(../img/benefits-support-mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: '';
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+            background-image: url(../img/benefits-support-mobile@2x.png);
+            /* Retina-specific stuff here */
+        }
+    }
+
+    .benefits__item-collaborative::after {
+        display: inline-block;
+        width: 350px;
+        height: 291.46px;
+        margin-bottom: 50px;
+        background-image: url(../img/benefits-collaborative-mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: '';
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+            background-image: url(../img/benefits-collaborative-mobile@2x.png);
+            /* Retina-specific stuff here */
+        }
+    }
+
+    .benefits__item-content {
+        margin: 0;
+        padding: 0;
+        width: 335px;
+    }
+
+    .benefits__item-managment-title {
+        margin-bottom: 10px;
+    }
+
+    .benefits__item-managment-description {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .benefits__support-list {
+        max-width: 335px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .benefits__support-item {
+        width: 335px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+    }
+
+    .benefits__support-desc {
+        width: 280px;
+    }
+
+    .benefits__item-managment-title {
+        margin-bottom: 16px;
+    }
+
+    .benefits__item-managment-description {
+        margin-bottom: 16px;
+    }
+
+    .benefits__item-marker {
+        margin-bottom: 12px;
+    }
+
+    .benefits__item-marker-desc {
+        margin-bottom: 12px;
+    }
+
+    .benefits__item-altereonist {
+        margin-bottom: 12px;
+    }
+
+    .benefits__item-altereonist-desc {
+        margin-bottom: 97px;
+    }
+
+    x .benefits__item-support-title {
+        margin-bottom: 15.77px;
+    }
+
+    .benefits__item-support-desc {
+        margin-bottom: 16px;
+    }
+
+    .benefits__item-collaborative-title {
+        margin-bottom: 16px;
+    }
+
+    .benefits__item-collaborative-desc {
+        margin-bottom: 16px;
+    }
+}
