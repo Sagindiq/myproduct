@@ -720,6 +720,242 @@ a {
   }
 }
 
+.benefits {
+  margin-top: 150px;
+}
+
+.benefits__list {
+  max-width: 1110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: -150px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.benefits__item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 150px;
+}
+
+.benefits__item-content {
+  width: 486px;
+}
+
+.benefits__item-management::after {
+  display: block;
+  width: 539px;
+  height: 473px;
+  background-image: url(../img/benefits-managment.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .benefits__item-management::after {
+    background-image: url(../img/benefits-managment@2x.png);
+    /* Retina-specific stuff here */
+  }
+}
+
+.benefits__item-validation {
+  font-family: 'poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.benefits__item-managment-title {
+  font-family: 'poppins', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 131px;
+}
+
+.benefits__item-managment-description {
+  display: none;
+}
+
+.benefits__item-marker {
+  font-family: 'poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 12px;
+}
+
+.benefits__item-marker-desc {
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 25px;
+}
+
+.benefits__item-altereonist {
+  font-family: 'poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 12px;
+}
+
+.benefits__item-altereonist-desc {
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.benefits__item-support::before {
+  display: inline-block;
+  width: 543px;
+  height: 500px;
+  background-image: url(../img/benefits-support.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .benefits__item-support::before {
+    background-image: url(../img/benefits-support@2x.png);
+    /* Retina-specific stuff here */
+  }
+}
+
+.benefits__item-easier {
+  font-family: 'poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.benefits__item-support-title {
+  font-family: 'poppins', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 23px;
+}
+
+.benefits__item-support-desc {
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
+.benefits__support-list {
+  margin-bottom: -30px;
+  width: 430px;
+}
+
+.benefits__support-item {
+  width: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.benefits__support-item::before {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  content: '';
+}
+
+.benefits__support-item--orange::before {
+  background-image: url(../img/orange-check.svg);
+}
+
+.benefits__support-item--red::before {
+  background-image: url(../img/red-check.svg);
+}
+
+.benefits__support-item--blue::before {
+  background-image: url(../img/blue-check.svg);
+}
+
+.benefits__support-desc {
+  width: 365px;
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.benefits__item-collaborative::after {
+  display: inline-block;
+  width: 541px;
+  height: 451px;
+  background-image: url(../img/benefits-collaborative.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .benefits__item-collaborative::after {
+    background-image: url(../img/benefits-collaborative@2x.png);
+    /* Retina-specific stuff here */
+  }
+}
+
+.benefits__item-optimisation {
+  font-family: 'poppins', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+
+.benefits__item-collaborative-title {
+  font-family: 'poppins', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  margin-bottom: 23px;
+}
+
+.benefits__item-collaborative-desc {
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+
 .night-theme--active .header__box--opened {
   background-color: #fff;
 }
