@@ -539,10 +539,20 @@ a {
           justify-content: space-between;
 }
 
-.intro__img {
-  max-width: 600px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.intro__container::after {
+  width: 600px;
+  height: 555px;
+  background-image: url(../../img/intro.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .intro__container::after {
+    background-image: url(../../img/intro@2x.png);
+    /* Retina-specific stuff here */
+  }
 }
 
 .intro__content {
@@ -627,6 +637,9 @@ a {
 }
 
 @media only screen and (max-width: 1131px) {
+  .intro__container::after {
+    width: 560px;
+  }
   .intro__content {
     width: 47.47%;
     padding-right: 2px;
@@ -665,7 +678,7 @@ a {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .intro__img {
+  .intro__container::after {
     width: 338px;
     height: 310px;
   }
