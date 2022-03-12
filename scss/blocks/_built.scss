@@ -77,3 +77,31 @@
     text-transform: uppercase;
     font-weight: 700;
 }
+
+@media only screen and (max-width: $tablet) {
+    .built {
+        height: 743px;
+    }
+    .built__list {
+        // max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+    }
+
+    .built__item {
+        width: 364px;
+        text-align: center;
+        // margin-left: auto;
+        // margin-right: auto;
+    }
+
+    .built__item--first,
+    .built__item--design {
+        margin-bottom: 40px;
+    }
+
+    .built__item-description {
+        width: 90%;
+    }
+}

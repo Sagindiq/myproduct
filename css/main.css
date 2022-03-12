@@ -107,7 +107,7 @@ a {
 .button {
   color: #fff;
   background-color: #02897A;
-  border: 1px solid #BCD0E5;
+  border: 1px solid transparent;
   border-radius: 4px;
   padding: 10px 22px 9px 25px;
 }
@@ -816,6 +816,29 @@ a {
   padding: 15px 32px 14px 34px;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 1131px) {
+  .built {
+    height: 743px;
+  }
+  .built__list {
+    margin-left: auto;
+    margin-right: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .built__item {
+    width: 364px;
+    text-align: center;
+  }
+  .built__item--first,
+  .built__item--design {
+    margin-bottom: 40px;
+  }
+  .built__item-description {
+    width: 90%;
+  }
 }
 
 .night-theme--active .header__box--opened {
