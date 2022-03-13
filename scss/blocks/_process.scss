@@ -1,0 +1,168 @@
+.process {
+    margin-top: 150px;
+    width: 100%;
+    height: 521.54px;
+    background-image: url(../img/process-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: background-image 0.4s;
+}
+
+.process__container {
+    padding-top: 52.54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.process__title {
+    @include poppins(700, 32px, 48px);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.process__description {
+    max-width: 542px;
+    margin: 0 auto;
+    @include poppins(600, 16px, 26px);
+    text-align: center;
+}
+
+.process__list {
+    max-width: 963px;
+    margin: 0 auto;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.process__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &--old-woman,
+    &--guy {
+        flex-direction: row-reverse;
+    }
+
+    &--woman,
+    &--old-woman {
+        margin-bottom: 24px;
+    }
+}
+
+.process__quote {
+    @include poppins (500, 16px, 24px);
+    color: #2F281E;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+    border-radius: 26.5px;
+    position: relative;
+
+    &::before {
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -7px;
+        content: '';
+    }
+
+    &::after {
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -18px;
+        content: '';
+    }
+}
+
+.process__item--woman {
+    width: 388px;
+
+    .process__quote {
+        padding: 15px 24px 14px 25px;
+
+        &::before {
+            left: 32px;
+        }
+
+        &::after {
+            left: 21px;
+        }
+    }
+} 
+    
+.process__item--old-woman {
+    width: 354px;
+    
+    .process__quote {
+        padding: 15px 18px 14px 22px;
+
+        &::before {
+            right: 36px;
+        }
+
+        &::after {
+            right: 17px;
+        }
+    }
+}
+
+.process__item--guy {
+    width: 377px;
+
+    .process__quote {
+        padding: 15px 30px 14px 33px;
+
+        &::before {
+            right: 55px;
+        }
+
+        &::after {
+            right: 36px;
+        }
+    }
+}
+
+.process__item--old-man {
+    width: 395px;
+
+    .process__quote {
+        padding: 14px 19px 15px 23px;
+
+        &::before {
+            right: 36px;
+        }
+
+        &::after {
+            right: 17px;
+        }
+    }
+
+}
+
+.process__button {
+    width: fit-content;
+    margin-top: 48px;
+    padding: 15px 31px 14px 30px;
+    background-color: $green-accent;
+    border: 1px solid $green-accent;
+    border-radius: 4px;
+    color: #fff;
+
+    &:hover {
+        color: $green-accent;
+        border: 1px solid $green-accent;
+        background-color: transparent;
+    }
+}

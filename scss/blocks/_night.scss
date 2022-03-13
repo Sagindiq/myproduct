@@ -38,3 +38,12 @@
 .header__burger-inner.night-background {
     background-color: var(--white-background);
 }
+
+.night-theme--active .process__quote {
+    color: #2F281E;
+}
+
+.night-theme--active .process {
+    background-image: url(../img/process-night-bg.png);
+    transition: background-image 0.4s;
+}
