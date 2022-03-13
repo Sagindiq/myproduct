@@ -156,6 +156,7 @@
 }
 
 .process__button {
+    @include poppins(700, 16px, 24px);
     width: fit-content;
     margin-top: 48px;
     padding: 15px 31px 14px 30px;
@@ -204,5 +205,74 @@
 
     .process__item--old-man {
         flex-direction: row-reverse;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .process__list {
+        flex-direction: column;
+    }
+
+    .process__item {
+        width: 333px;
+        align-items: center;
+        margin-bottom: 32px;
+
+        .process__quote {
+            @include poppins(500, 16px, 24px);
+            text-align: center;
+
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .process__item--woman {
+
+        .process__quote {
+            max-width: 220px;
+            width: 100%;
+            padding: 12px 20px 2px 20px;
+            text-align: left;
+        }
+    }
+
+    .process__item--guy {
+        order: 2;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        .process__quote {
+            max-width: 218px;
+            width: 100%;
+            padding: 12px 27px 4px 30px;
+        }
+    }
+
+    .process__item--old-man {
+        order: 3;
+        flex-direction: row;
+
+        .process__quote {
+            max-width: 218px;
+            width: 100%;
+            padding: 12px 16px 5px 19px;
+        }
+    }
+
+    .process__item--old-woman {
+        order: 4;
+
+        .process__quote {
+            max-width: 215px;
+            width: 100%;
+            padding: 11px 16px 5px 19px;
+        }
+    }
+
+    .process__button {
+        margin-top: 0;
     }
 }
