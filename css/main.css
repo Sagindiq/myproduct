@@ -841,7 +841,8 @@ a {
 }
 
 .process__item--woman {
-  width: 388px;
+  max-width: 388px;
+  width: 100%;
 }
 
 .process__item--woman .process__quote {
@@ -857,7 +858,8 @@ a {
 }
 
 .process__item--old-woman {
-  width: 354px;
+  max-width: 354px;
+  width: 100%;
 }
 
 .process__item--old-woman .process__quote {
@@ -873,7 +875,8 @@ a {
 }
 
 .process__item--guy {
-  width: 377px;
+  max-width: 377px;
+  width: 100%;
 }
 
 .process__item--guy .process__quote {
@@ -889,7 +892,8 @@ a {
 }
 
 .process__item--old-man {
-  width: 395px;
+  max-width: 395px;
+  width: 100%;
 }
 
 .process__item--old-man .process__quote {
@@ -920,6 +924,45 @@ a {
   color: #02897A;
   border: 1px solid #02897A;
   background-color: transparent;
+}
+
+@media only screen and (max-width: 1131px) {
+  .process__item {
+    max-width: 360px;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .process__item .process__quote {
+    padding: 15px 23px 14px 24px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .process__item--old-woman {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .process__item--guy .process__quote::before {
+    left: 55px;
+  }
+  .process__item--guy .process__quote::after {
+    left: 36px;
+  }
+  .process__item--old-man {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
 }
 
 .night-theme--active .header__box--opened {

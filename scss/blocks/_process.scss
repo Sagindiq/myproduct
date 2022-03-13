@@ -87,7 +87,8 @@
 }
 
 .process__item--woman {
-    width: 388px;
+    max-width: 388px;
+    width: 100%;
 
     .process__quote {
         padding: 15px 24px 14px 25px;
@@ -103,7 +104,8 @@
 } 
     
 .process__item--old-woman {
-    width: 354px;
+    max-width: 354px;
+    width: 100%;
     
     .process__quote {
         padding: 15px 18px 14px 22px;
@@ -119,7 +121,8 @@
 }
 
 .process__item--guy {
-    width: 377px;
+    max-width: 377px;
+    width: 100%;
 
     .process__quote {
         padding: 15px 30px 14px 33px;
@@ -135,7 +138,8 @@
 }
 
 .process__item--old-man {
-    width: 395px;
+    max-width: 395px;
+    width: 100%;
 
     .process__quote {
         padding: 14px 19px 15px 23px;
@@ -164,5 +168,41 @@
         color: $green-accent;
         border: 1px solid $green-accent;
         background-color: transparent;
+    }
+}
+
+@media only screen and (max-width: $tablet) {
+    .process__item {
+        max-width: 360px;
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+
+        .process__quote {
+            padding: 15px 23px 14px 24px;
+            @include poppins(400, 14px, 20px);
+        }
+    }
+
+    .process__item--old-woman {
+        flex-direction: row-reverse;
+    }
+
+    .process__item--guy {
+
+        & .process__quote {
+
+            &::before {
+                left: 55px;
+            }
+
+            &::after {
+                left: 36px;
+            }
+        }
+    }
+
+    .process__item--old-man {
+        flex-direction: row-reverse;
     }
 }
