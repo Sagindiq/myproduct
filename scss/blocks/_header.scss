@@ -141,7 +141,8 @@
 @media only screen and (max-width: $mobile) {
     .header__container {
         max-width: 380px;
-        padding: unset 15px;
+        padding-left: 15px;
+        padding-right: 15px;
         margin: 0 auto;
         justify-content: space-between;
     }
