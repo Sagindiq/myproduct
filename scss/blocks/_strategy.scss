@@ -73,3 +73,33 @@
         margin-right: auto;
     }
 }
+
+@media only screen and (max-width: $mobile) {
+    .strategy__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .strategy__description {
+        margin-bottom: 40px;
+    }
+
+    .strategy__list {
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: -16px;
+    }
+
+    .strategy__item {
+        margin: 0 auto;
+        margin-bottom: 16px;
+    }
+
+    .strategy__item--active {
+        order: 2;
+    }
+
+    .strategy__item:nth-child(3) {
+        order: 3;
+    }
+}
