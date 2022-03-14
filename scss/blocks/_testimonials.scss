@@ -1,7 +1,7 @@
 .testimonials__container {
-  max-width: 1110px;
+  max-width: 1150px;
   margin: auto;
-  padding: 150px 0 145px 0;
+  padding: 150px 20px 145px 20px;
 }
 
 // // .testimonials__container {
@@ -86,4 +86,25 @@
   line-height: 24px;
   letter-spacing: 0.2px;
   color: #252B42;
+}
+@media only screen and (max-width: $tablet) {
+
+  .testimonials__list {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    margin-bottom: -40px;
+  }
+
+  .testimonials__item {
+    margin-bottom: 40px;
+  }
+
+  .testimonials__item:nth-child(3n) {
+    flex-basis: 323px;
+    margin-left: auto;
+    margin-right: auto;
+    // flex-grow: 1;
+  }
 }
