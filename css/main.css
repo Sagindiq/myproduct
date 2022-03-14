@@ -760,6 +760,10 @@ a {
   overflow: hidden;
 }
 
+.strategy__item--active .strategy__item-description {
+  color: #02897A;
+}
+
 .strategy__img {
   margin-bottom: 24px;
 }
@@ -785,6 +789,30 @@ a {
   font-size: 24px;
   line-height: 40px;
   margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 1131px) {
+  .strategy__title {
+    text-align: center;
+  }
+  .strategy__description {
+    text-align: center;
+  }
+  .strategy__list {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .strategy__item--active {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .night-theme--active .header__box--opened {

@@ -25,6 +25,10 @@
     overflow: hidden;
 }
 
+.strategy__item--active  .strategy__item-description {
+    color: $green-accent;
+}
+
 .strategy__img {
     margin-bottom: 24px;
 }
@@ -44,4 +48,28 @@
 .strategy__item-description {
     @include poppins(700, 24px, 40px);
     margin-bottom: 40px;
+}
+
+@media only screen and (max-width: $tablet) {
+    .strategy__title {
+        text-align: center;
+    }
+
+    .strategy__description {
+        text-align: center;
+    }
+
+    .strategy__list {
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-wrap: wrap;
+    }
+
+    .strategy__item--active {
+        order: 3;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
