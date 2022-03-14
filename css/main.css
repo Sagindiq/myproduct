@@ -837,6 +837,24 @@ a {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .testimonials__subtitle {
+    width: 323px;
+    margin-bottom: 32px;
+  }
+  .testimonials__list {
+    width: 327px;
+    margin-bottom: -32px;
+  }
+  .testimonials__item {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .testimonials__description {
+    width: 275px;
+  }
+}
+
 .night-theme--active .header__box--opened {
   background-color: #fff;
 }
