@@ -1,0 +1,47 @@
+.strategy {
+    margin-top: 150px;
+}
+
+.strategy__title {
+    @include poppins(700, 34px, 51px);
+    margin-bottom: 8px;
+}
+
+.strategy__description {
+    @include poppins(500, 16px, 26px);
+    margin-bottom: 33px;
+}
+
+.strategy__list {
+    display: flex;
+    justify-content: space-between;
+    @include list-unstyled;
+}
+
+.strategy__item {
+    max-width: 348px;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.strategy__img {
+    margin-bottom: 24px;
+}
+
+.strategy__content {
+    padding-left: 24px;
+}
+
+.strategy__item-title {
+    @include poppins(400, 16px, 28px);
+
+    span {
+        font-weight: bold;
+    }
+}
+
+.strategy__item-description {
+    @include poppins(700, 24px, 40px);
+    margin-bottom: 40px;
+}
