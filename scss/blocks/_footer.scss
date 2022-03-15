@@ -1,3 +1,7 @@
+.footer {
+  margin-top: 150px;
+}
+
 .footer__container {
   max-width: 1109px;
 }
@@ -87,4 +91,22 @@
   font-size: 16px;
   line-height: 30px;
   color: #22343D;
+}
+@media only screen and (max-width: $tablet) {
+  .footer__list {
+    max-width: 950px;
+    flex-wrap: wrap;
+  }
+
+  .footer__item {
+    width: 332px;
+  }
+
+  .footer__item:nth-child(2) {
+    order: 4;
+  }
+
+  .footer__item:nth-child(4) {
+    order: 3;
+  }
 }
