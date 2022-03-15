@@ -6,11 +6,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
 
-.intro__img {
-    max-width: 600px;
-    object-fit: cover;
+    &::after {
+        width: 600px;
+        height: 555px;
+        background-image: url(../../img/intro.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: '';
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+            background-image: url(../../img/intro@2x.png);
+            /* Retina-specific stuff here */
+        }
+    }
 }
 
 .intro__content {
@@ -71,6 +84,10 @@
 
 @media only screen and (max-width: $tablet) {
 
+    .intro__container::after {
+        width: 560px;
+    }
+
     .intro__content {
         width: 47.47%;
         padding-right: 2px;
@@ -94,7 +111,7 @@
     }
 
     .intro__link-text {
-        @include poppins(600px, 14px, 20px);
+        @include poppins(600, 14px, 20px);
     }
 }
 
@@ -103,7 +120,7 @@
         flex-direction: column-reverse;
     }
 
-    .intro__img {
+    .intro__container::after {
         width: 338px;
         height: 310px;
     }

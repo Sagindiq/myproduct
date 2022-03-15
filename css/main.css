@@ -205,6 +205,7 @@ a {
   color: #fff;
   background-color: #02897A;
   cursor: pointer;
+  border: 1px solid #02897A;
 }
 
 .header__button :focus {
@@ -214,6 +215,7 @@ a {
 .header__button--register {
   color: #fff;
   background-color: #02897A;
+  border: #02897A;
 }
 
 .header__button--register:hover {
@@ -287,7 +289,8 @@ a {
 @media only screen and (max-width: 768px) {
   .header__container {
     max-width: 380px;
-    padding: unset 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -389,7 +392,7 @@ a {
     margin: 0;
     padding: 0;
     position: absolute;
-    bottom: 130px;
+    top: 280px;
   }
   .header__button {
     font-family: 'poppins', sans-serif;
@@ -473,10 +476,10 @@ a {
   .header__item-link:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
-    -webkit-transition: -webkit-transform 0.4s linear both;
-    transition: -webkit-transform 0.4s linear both;
-    transition: transform 0.4s linear both;
-    transition: transform 0.4s linear both, -webkit-transform 0.4s linear both;
+    -webkit-transition: -webkit-transform 0.4s;
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    transition: transform 0.4s, -webkit-transform 0.4s;
   }
   .header__item-link--active {
     font-weight: 700;
@@ -537,10 +540,20 @@ a {
           justify-content: space-between;
 }
 
-.intro__img {
-  max-width: 600px;
-  -o-object-fit: cover;
-     object-fit: cover;
+.intro__container::after {
+  width: 600px;
+  height: 555px;
+  background-image: url(../../img/intro.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: '';
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .intro__container::after {
+    background-image: url(../../img/intro@2x.png);
+    /* Retina-specific stuff here */
+  }
 }
 
 .intro__content {
@@ -625,6 +638,9 @@ a {
 }
 
 @media only screen and (max-width: 1131px) {
+  .intro__container::after {
+    width: 560px;
+  }
   .intro__content {
     width: 47.47%;
     padding-right: 2px;
@@ -650,7 +666,7 @@ a {
   }
   .intro__link-text {
     font-family: 'poppins', sans-serif;
-    font-weight: 600px;
+    font-weight: 600;
     font-size: 14px;
     line-height: 20px;
   }
@@ -663,7 +679,7 @@ a {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .intro__img {
+  .intro__container::after {
     width: 338px;
     height: 310px;
   }
@@ -714,6 +730,16 @@ a {
 .pricing__container {
   max-width: 1110px;
   margin: 0 auto;
+}
+
+.pricing__page-title {
+  text-align: center;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #22343D;
 }
 
 .pricing__title {
