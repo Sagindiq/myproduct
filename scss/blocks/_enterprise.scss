@@ -52,15 +52,35 @@
 }
 
 @media only screen  and (max-width: $tablet) {
-  .enterprise__container {
     .enterprise__title {
       margin-bottom: 12px;
     }
     .enterprise__description {
       margin-bottom: 8px;
     }
+    .enterprise__desc {
+      margin-bottom: 12px;
+    }
     .enterprise__button {
       margin-bottom: 12px;
     }
+  }
+
+
+@media only screen and (max-width: $mobile) {
+  .enterprise__container {
+    max-width: 335px;
+  }
+  .enterprise__title {
+    margin-bottom: 24px;
+  }
+  .enterprise__description {
+    margin-bottom: 32px;
+  }
+  .enterprise__desc {
+    margin-bottom: 32px;
+  }
+  .enterprise__button {
+    margin-bottom: 146px;
   }
 }

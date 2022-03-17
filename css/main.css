@@ -776,14 +776,35 @@ a {
 }
 
 @media only screen and (max-width: 1131px) {
-  .enterprise__container .enterprise__title {
+  .enterprise__title {
     margin-bottom: 12px;
   }
-  .enterprise__container .enterprise__description {
+  .enterprise__description {
     margin-bottom: 8px;
   }
-  .enterprise__container .enterprise__button {
+  .enterprise__desc {
     margin-bottom: 12px;
+  }
+  .enterprise__button {
+    margin-bottom: 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .enterprise__container {
+    max-width: 335px;
+  }
+  .enterprise__title {
+    margin-bottom: 24px;
+  }
+  .enterprise__description {
+    margin-bottom: 32px;
+  }
+  .enterprise__desc {
+    margin-bottom: 32px;
+  }
+  .enterprise__button {
+    margin-bottom: 146px;
   }
 }
 
