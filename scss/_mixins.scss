@@ -1,3 +1,9 @@
+@mixin reset-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
 @mixin poppins($fw, $fz, $lh) {
     font-family: 'poppins', sans-serif;
     font-weight: $fw;
