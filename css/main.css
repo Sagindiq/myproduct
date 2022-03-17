@@ -721,6 +721,109 @@ a {
   }
 }
 
+.effects__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.effects__content::before {
+  display: inline-block;
+  background-image: url("../../img/effects__bcg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  width: 528px;
+  height: 392px;
+  content: '';
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .effects__content {
+    background-image: url(../img/benefits-managment@2x.png);
+  }
+}
+
+.effects__title {
+  margin-bottom: 56px;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  color: #22343D;
+}
+
+.effects__list {
+  max-width: 540px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.effects__item {
+  max-width: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 39px;
+}
+
+.effects__item:last-child {
+  margin-bottom: 0;
+}
+
+.effects__item--pause::before {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 14px;
+  background-image: url("../../img/pause.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: '';
+}
+
+.effects__item--file::before {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 14px;
+  background-image: url("../../img/file.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: '';
+}
+
+.effects__item--red_file::before {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin-right: 14px;
+  background-image: url("../../img/red_file.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  content: '';
+}
+
 .night-theme--active .header__box--opened {
   background-color: #fff;
 }
