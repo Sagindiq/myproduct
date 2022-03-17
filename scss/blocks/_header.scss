@@ -30,6 +30,7 @@
 .header__logo {
     margin-right: auto;
 }
+
 .header__box {
     width: 695px;
     display: flex;
@@ -62,7 +63,7 @@
     }
 
     :focus {
-        border:none;
+        border: none;
     }
 }
 
@@ -166,13 +167,13 @@
         margin: 0;
         padding: 0;
     }
-    
+
     .header__burger {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    
+
     .header__burger--opened {
         position: relative;
 
