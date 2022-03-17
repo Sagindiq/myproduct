@@ -50,6 +50,28 @@
     margin-bottom: 40px;
 }
 
+.strategy__carousel {
+    width: 68px;
+    margin-top: 64px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.strategy__switcher {
+    display: inline-block;
+    background-color: #EFEFEF;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+}
+
+.stragety__switcher--active {
+    background-color: $green-accent;
+}
+
 @media only screen and (max-width: $tablet) {
     .strategy__title {
         text-align: center;
