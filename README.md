@@ -1,7 +1,7 @@
 "*My* **product**"
 
-__ Sag'indiq tomonidan header dan pricing gacha bo'lgan sectionlar qilindi.
-Dilmurod tomonidan Pricing dan boshlab footer gacha qilindi __
+_Sag'indiq tomonidan header dan pricing gacha bo'lgan sectionlar qilindi.
+Dilmurod tomonidan Pricing dan boshlab footer gacha qilindi_
 
 
 
