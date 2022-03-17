@@ -751,6 +751,7 @@ a {
 }
 
 .effects__title {
+  text-align: center;
   margin-bottom: 56px;
   font-weight: 700;
   font-size: 34px;
@@ -822,6 +823,17 @@ a {
   background-position: center center;
   background-size: contain;
   content: '';
+}
+
+@media only screen and (max-width: 1131px) {
+  .effects__container {
+    max-width: 900px;
+  }
+  .effects__title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
 }
 
 .night-theme--active .header__box--opened {
