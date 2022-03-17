@@ -110,3 +110,48 @@
     order: 3;
   }
 }
+@media only screen and (max-width: $mobile) {
+  .footer__list {
+    max-width: 361px;
+    display: block;
+    text-align: center;
+  }
+
+  .footer__socials {
+    margin-bottom: 32px;
+  }
+  .footer__input {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+  .footer__description {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .footer__item-resource {
+    margin-bottom: 32px;
+  }
+  .footer__item-legal {
+    margin-bottom: 32px;
+  }
+  .footer__btn {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 44px;
+  }
+  .footer__end {
+    width: 361px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer__logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
