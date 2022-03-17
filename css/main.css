@@ -391,6 +391,7 @@ a {
     -webkit-box-pack: unset;
         -ms-flex-pack: unset;
             justify-content: unset;
+    text-align: left;
     -webkit-box-align: unset;
         -ms-flex-align: unset;
             align-items: unset;
