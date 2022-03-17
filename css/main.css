@@ -1983,6 +1983,10 @@ a {
   }
 }
 
+.strategy__carousel {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .strategy {
     margin-top: 400px;
@@ -2022,6 +2026,9 @@ a {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+  .strategy__carousel {
+    display: none;
   }
 }
 

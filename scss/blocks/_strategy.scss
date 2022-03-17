@@ -96,6 +96,10 @@
     }
 }
 
+.strategy__carousel {
+    display: none;
+}
+
 @media only screen and (max-width: $mobile) {
     .strategy {
         margin-top: 400px;
@@ -128,5 +132,9 @@
 
     .strategy__item:nth-child(3) {
         order: 3;
+    }
+
+    .strategy__carousel {
+        display: none;
     }
 }
