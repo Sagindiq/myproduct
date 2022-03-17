@@ -2080,4 +2080,8 @@ a {
   -webkit-transition: background-image 0.4s;
   transition: background-image 0.4s;
 }
+
+.night-theme--active .pricing__item {
+  color: #1F2E35;
+}
 /*# sourceMappingURL=main.css.map */
