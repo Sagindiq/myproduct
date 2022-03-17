@@ -41,5 +41,14 @@
 
 .night-theme--active .built {
     background-image: url(../img/built-night-bg.png);
+
+}
+
+.night-theme--active .process__quote {
+    color: #2F281E;
+}
+
+.night-theme--active .process {
+    background-image: url(../img/process-night-bg.png);
     transition: background-image 0.4s;
 }
