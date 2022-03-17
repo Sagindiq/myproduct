@@ -43,7 +43,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     &--old-woman,
     &--guy {
         flex-direction: row-reverse;
@@ -101,12 +101,12 @@
             left: 21px;
         }
     }
-} 
-    
+}
+
 .process__item--old-woman {
     max-width: 354px;
     width: 100%;
-    
+
     .process__quote {
         padding: 15px 18px 14px 22px;
 
