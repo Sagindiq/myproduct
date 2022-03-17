@@ -38,3 +38,8 @@
 .header__burger-inner.night-background {
     background-color: var(--white-background);
 }
+
+.night-theme--active .built {
+    background-image: url(../img/built-night-bg.png);
+    transition: background-image 0.4s;
+}
