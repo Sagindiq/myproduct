@@ -1,0 +1,401 @@
+// heach qayerga color bermadim chunki bu yerdagi hamma textlar body da berilgan color (#22343D) bilan bir xil ekan.
+
+.benefits {
+    margin-top: 150px;
+}
+
+.benefits__list {
+    max-width: 1110px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -150px;
+    @include list-unstyled;
+}
+
+.benefits__item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.benefits__item-content {
+    width: 486px;
+}
+
+//managment start
+
+.benefits__item-management::after {
+    display: block;
+    width: 539px;
+    height: 473px;
+    background-image: url(../img/benefits-managment.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: '';
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        background-image: url(../img/benefits-managment@2x.png);
+        /* Retina-specific stuff here */
+    }
+}
+
+.benefits__item-validation {
+    @include poppins(600, 16px, 24px);
+    margin-bottom: 8px;
+}
+
+.benefits__item-managment-title {
+    @include poppins(700, 32px, 48px);
+    margin-bottom: 131px;
+}
+
+.benefits__item-managment-description {
+    display: none;
+}
+
+.benefits__item-marker {
+    @include poppins(600, 16px, 26px);
+    margin-bottom: 12px;
+}
+
+.benefits__item-marker-desc {
+    @include poppins(400, 16px, 26px);
+    margin-bottom: 25px;
+}
+
+.benefits__item-altereonist {
+    @include poppins(600, 16px, 26px);
+    margin-bottom: 12px;
+}
+
+.benefits__item-altereonist-desc {
+    @include poppins(400, 16px, 26px);
+}
+
+//support start
+
+.benefits__item-support::before {
+    display: inline-block;
+    width: 543px;
+    height: 500px;
+    background-image: url(../img/benefits-support.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: '';
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        background-image: url(../img/benefits-support@2x.png);
+        /* Retina-specific stuff here */
+    }
+}
+
+.benefits__item-easier {
+    @include poppins(600, 16px, 24px);
+    margin-bottom: 8px;
+}
+
+.benefits__item-support-title {
+    @include poppins(700, 32px, 48px);
+    margin-bottom: 23px;
+}
+
+.benefits__item-support-desc {
+    @include poppins(400, 16px, 26px);
+    margin-bottom: 30px;
+}
+
+.benefits__support-list {
+    margin-bottom: -30px;
+    width: 430px;
+}
+
+.benefits__support-item {
+    width: 430px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    @include list-unstyled;
+
+    &::before {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        content: '';
+    }
+}
+
+.benefits__support-item--orange::before {
+    background-image: url(../img/orange-check.svg);
+}
+
+.benefits__support-item--red::before {
+    background-image: url(../img/red-check.svg);
+}
+
+.benefits__support-item--blue::before {
+    background-image: url(../img/blue-check.svg);
+}
+
+.benefits__support-desc {
+    width: 365px;
+    @include poppins(400, 16px, 26px);
+}
+
+// Collaborative start
+
+.benefits__item-collaborative::after {
+    display: inline-block;
+    width: 541px;
+    height: 451px;
+    background-image: url(../img/benefits-collaborative.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    content: '';
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+        background-image: url(../img/benefits-collaborative@2x.png);
+        /* Retina-specific stuff here */
+    }
+}
+
+.benefits__item-optimisation {
+    @include poppins(600, 15px, 24px);
+    margin-bottom: 8px;
+}
+
+.benefits__item-collaborative-title {
+    @include poppins(700, 32px, 48px);
+    margin-bottom: 23px;
+}
+
+.benefits__item-collaborative-desc {
+    @include poppins(400, 16px, 26px);
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: $tablet) and (min-width: $mobile) {
+    .benefits__list {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .benefits__item {
+        flex-direction: column;
+    }
+
+    .benefits__item-management,
+    .benefits__item-collaborative {
+        flex-direction: column-reverse;
+    }
+
+    .benefits__item::before {
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+
+    .benefits__item-support>.benefits__item-content {
+        margin-left: auto;
+    }
+
+    .benefits__item-management::after {
+        margin-left: auto;
+        margin-bottom: 40px;
+    }
+
+    .benefits__item-management>.benefits__item-content {
+        margin-right: auto;
+        text-align: right;
+    }
+
+    .benefits__item-collaborative::after {
+        margin-left: auto;
+        margin-bottom: 40px;
+    }
+
+    .benefits__item-collaborative>.benefits__item-content {
+        margin-right: auto;
+        text-align: right;
+    }
+
+    .benefits__item-managment-title {
+        margin-bottom: 30px;
+    }
+
+    // ilon izi shaklida qilingang
+}
+
+@media only screen and (max-width: $mobile) {
+    .benefits__list {
+        width: 335px;
+        justify-content: unset;
+        align-items: unset;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .benefits__item {
+        flex-direction: column;
+        justify-content: unset !important;
+        align-items: unset !important;
+    }
+
+    .benefits__item-management,
+    .benefits__item-collaborative {
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+
+    .benefits__item-management::after {
+        display: inline-block;
+        width: 349px;
+        height: 306px;
+        margin-bottom: 50px;
+        background-image: url(../img/benefits-managment.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: '';
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+            background-image: url(../img/benefits-managment@2x.png);
+            /* Retina-specific stuff here */
+        }
+    }
+
+    .benefits__item-support::before {
+        display: inline-block;
+        width: 350px;
+        height: 319px;
+        margin-bottom: 50px;
+        background-image: url(../img/benefits-support-mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: '';
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+            background-image: url(../img/benefits-support-mobile@2x.png);
+            /* Retina-specific stuff here */
+        }
+    }
+
+    .benefits__item-collaborative::after {
+        display: inline-block;
+        width: 350px;
+        height: 291.46px;
+        margin-bottom: 50px;
+        background-image: url(../img/benefits-collaborative-mobile.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: '';
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2),
+        only screen and (min--moz-device-pixel-ratio: 2),
+        only screen and (-o-min-device-pixel-ratio: 2/1),
+        only screen and (min-device-pixel-ratio: 2),
+        only screen and (min-resolution: 192dpi),
+        only screen and (min-resolution: 2dppx) {
+            background-image: url(../img/benefits-collaborative-mobile@2x.png);
+            /* Retina-specific stuff here */
+        }
+    }
+
+    .benefits__item-content {
+        margin: 0;
+        padding: 0;
+        width: 335px;
+    }
+
+    .benefits__item-managment-title {
+        margin-bottom: 10px;
+    }
+
+    .benefits__item-managment-description {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .benefits__support-list {
+        max-width: 335px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .benefits__support-item {
+        width: 335px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: space-between;
+    }
+
+    .benefits__support-desc {
+        width: 280px;
+    }
+
+    .benefits__item-managment-title {
+        margin-bottom: 16px;
+    }
+
+    .benefits__item-managment-description {
+        margin-bottom: 16px;
+    }
+
+    .benefits__item-marker {
+        margin-bottom: 12px;
+    }
+
+    .benefits__item-marker-desc {
+        margin-bottom: 12px;
+    }
+
+    .benefits__item-altereonist {
+        margin-bottom: 12px;
+    }
+
+    .benefits__item-altereonist-desc {
+        margin-bottom: 97px;
+    }
+
+    x .benefits__item-support-title {
+        margin-bottom: 15.77px;
+    }
+
+    .benefits__item-support-desc {
+        margin-bottom: 16px;
+    }
+
+    .benefits__item-collaborative-title {
+        margin-bottom: 16px;
+    }
+
+    .benefits__item-collaborative-desc {
+        margin-bottom: 16px;
+    }
+}

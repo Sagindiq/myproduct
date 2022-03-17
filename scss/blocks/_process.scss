@@ -1,0 +1,278 @@
+.process {
+    margin-top: 150px;
+    width: 100%;
+    height: 521.54px;
+    background-image: url(../img/process-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: background-image 0.4s;
+}
+
+.process__container {
+    padding-top: 52.54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.process__title {
+    @include poppins(700, 32px, 48px);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.process__description {
+    max-width: 542px;
+    margin: 0 auto;
+    @include poppins(600, 16px, 26px);
+    text-align: center;
+}
+
+.process__list {
+    max-width: 963px;
+    margin: 0 auto;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.process__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--old-woman,
+    &--guy {
+        flex-direction: row-reverse;
+    }
+
+    &--woman,
+    &--old-woman {
+        margin-bottom: 24px;
+    }
+}
+
+.process__quote {
+    @include poppins (500, 16px, 24px);
+    color: #2F281E;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+    border-radius: 26.5px;
+    position: relative;
+
+    &::before {
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -7px;
+        content: '';
+    }
+
+    &::after {
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        bottom: -18px;
+        content: '';
+    }
+}
+
+.process__item--woman {
+    max-width: 388px;
+    width: 100%;
+
+    .process__quote {
+        padding: 15px 24px 14px 25px;
+
+        &::before {
+            left: 32px;
+        }
+
+        &::after {
+            left: 21px;
+        }
+    }
+}
+
+.process__item--old-woman {
+    max-width: 354px;
+    width: 100%;
+
+    .process__quote {
+        padding: 15px 18px 14px 22px;
+
+        &::before {
+            right: 36px;
+        }
+
+        &::after {
+            right: 17px;
+        }
+    }
+}
+
+.process__item--guy {
+    max-width: 377px;
+    width: 100%;
+
+    .process__quote {
+        padding: 15px 30px 14px 33px;
+
+        &::before {
+            right: 55px;
+        }
+
+        &::after {
+            right: 36px;
+        }
+    }
+}
+
+.process__item--old-man {
+    max-width: 395px;
+    width: 100%;
+
+    .process__quote {
+        padding: 14px 19px 15px 23px;
+
+        &::before {
+            right: 36px;
+        }
+
+        &::after {
+            right: 17px;
+        }
+    }
+
+}
+
+.process__button {
+    @include poppins(700, 16px, 24px);
+    width: fit-content;
+    margin-top: 48px;
+    padding: 15px 31px 14px 30px;
+    background-color: $green-accent;
+    border: 1px solid $green-accent;
+    border-radius: 4px;
+    color: #fff;
+
+    &:hover {
+        color: $green-accent;
+        border: 1px solid $green-accent;
+        background-color: transparent;
+    }
+}
+
+@media only screen and (max-width: $tablet) {
+    .process__item {
+        max-width: 360px;
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+
+        .process__quote {
+            padding: 15px 23px 14px 24px;
+            @include poppins(400, 14px, 20px);
+        }
+    }
+
+    .process__item--old-woman {
+        flex-direction: row-reverse;
+    }
+
+    .process__item--guy {
+
+        & .process__quote {
+
+            &::before {
+                left: 55px;
+            }
+
+            &::after {
+                left: 36px;
+            }
+        }
+    }
+
+    .process__item--old-man {
+        flex-direction: row-reverse;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .process__list {
+        flex-direction: column;
+    }
+
+    .process__item {
+        width: 333px;
+        align-items: center;
+        margin-bottom: 32px;
+
+        .process__quote {
+            @include poppins(500, 16px, 24px);
+            text-align: center;
+
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    .process__item--woman {
+
+        .process__quote {
+            max-width: 220px;
+            width: 100%;
+            padding: 12px 20px 2px 20px;
+            text-align: left;
+        }
+    }
+
+    .process__item--guy {
+        order: 2;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        .process__quote {
+            max-width: 218px;
+            width: 100%;
+            padding: 12px 27px 4px 30px;
+        }
+    }
+
+    .process__item--old-man {
+        order: 3;
+        flex-direction: row;
+
+        .process__quote {
+            max-width: 218px;
+            width: 100%;
+            padding: 12px 16px 5px 19px;
+        }
+    }
+
+    .process__item--old-woman {
+        order: 4;
+
+        .process__quote {
+            max-width: 215px;
+            width: 100%;
+            padding: 11px 16px 5px 19px;
+        }
+    }
+
+    .process__button {
+        margin-top: 0;
+    }
+}
