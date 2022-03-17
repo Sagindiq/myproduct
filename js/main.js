@@ -18,3 +18,13 @@ burger.addEventListener("click", function() {
   header.classList.toggle("header__box--opened");
   headerShadow.classList.toggle("header__shadow--activated");
 })
+
+const faqsBtn = document.querySelector(".faqs__btn");
+const faqsDesc = document.querySelector(".faqs__description");
+
+// faqs code
+
+faqsBtn.addEventListener("click", function() {
+  faqsBtn.classList.toggle("faqs__btn--activated");
+  faqsDesc.classList.toggle("faqs__description--opened");
+})
