@@ -1659,6 +1659,16 @@ a {
   margin: 0 auto;
 }
 
+.pricing__page-title {
+  text-align: center;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #22343D;
+}
+
 .pricing__title {
   text-align: center;
   margin-bottom: 8px;
@@ -2444,6 +2454,16 @@ a {
 .pricing__container {
   max-width: 1110px;
   margin: 0 auto;
+}
+
+.pricing__page-title {
+  text-align: center;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #22343D;
 }
 
 .pricing__title {
