@@ -58,6 +58,7 @@
         color: #fff;
         background-color: #02897A;
         cursor: pointer;
+        border: 1px solid $green-accent;
     }
 
     :focus {
@@ -68,6 +69,7 @@
 .header__button--register {
     color: #fff;
     background-color: #02897A;
+    border: $green-accent;
 
     &:hover {
         color: #02897A;
